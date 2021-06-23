@@ -1,0 +1,44 @@
+body
+{
+    margin:0px;
+}
+#header
+{
+    width:100%;
+    height:150px;
+    background-color:olivedrab;
+    color: chocolate;
+}
+#logo
+{
+    /* width:10%; */
+    /* margin-left:45%;
+    margin-right:45%;
+    height:100px; */
+    width:10%;
+    height:70px;
+    margin:auto;
+}
+#menu
+{
+    width:100%;
+    height:100px;
+     background-color: palevioletred; 
+    color:red;
+}
+.li_style
+{
+    width:76px;
+    height:25px;
+    float:left;
+    list-style: none;
+    text-align: center;
+    border:1.5px solid green;
+    border-radius:1px;
+    border-style:solid;
+    margin-left:175px;
+    margin-top:25px;
+    /* font-family:monospace; */
+    /* font-style: normal; */
+    font-weight: bold;
+}
