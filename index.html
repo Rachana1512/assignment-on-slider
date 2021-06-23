@@ -1,22 +1,191 @@
-<html>
-    <head>
-        <title>products</title>
-        <link rel="stylesheet" type="text/css" href="css/design.css">
-    </head>
-    <body>
-        <div id="header">
-           <div id="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png" width="80px" height="80px">
-            </div>
-               <div id="menu">
-          <ul>
-              <li class="li_style">HOME</li>
-              <li class="li_style">ABOUT</li>
-              <li class="li_style">TEAM</li>
-              <li class="li_style">PROJECT</li>
-              <li class="li_style">CONTACT</li>
-          </ul>
-                </div>
-     </div>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Range Slider</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<!-- *************************************************************************************************************** -->
+
+<style>
+    body{
+        background-color:blue;
+        padding:300px;
+        margin-top: 50px;
+        padding-top: 10px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .slider
+    {
+        position: relative;
+    }
+    .range-slider
+    {
+        -webkit-appearance: none;
+        appearance: none;
+        width:30%;
+        height:15px;
+        outline:none;
+        background-color:white;
+    }
+    .range-slider::-webkit-slider-thumb
+    {
+        -webkit-appearance: none;
+        appearance: none;
+        width:15px;
+        height:25px;
+        background-color:indianred;
+        border-radius:100%;
+
+    }
+    .range-slider::-webkit-slider-thumb:hover
+    {
+        box-shadow:0 0 0 5px rgba(255,255,255,0.7);
+
+    }
+
+    .range-slider::-webkit-slider-thumb:active
+    {
+        box-shadow:0 0 0 5px rgba(63, 42, 42, 0.9);
+
+    }
+
+    .label-left
+    {
+        color:white;
+        font-size:20px;
+        float:left;
+    }
+    
+    .label-right
+    {
+        color:white;
+        font-size:20px;
+
+    }
+
+    .sliderValue
+    {
+        color:white;
+        font-size:20px;
+        margin-left:105px
+    }
+   
+
+     .btn1
+     {
+         padding-bottom: 5px;
+         margin-bottom: 100px;
+         margin-top:50px;
+     }
+     
+
+     .btn2
+     {
+        padding-bottom: 5px;
+        margin-bottom: 100px;
+         margin-top:50px;
+     }
+     
+     .btn3
+     {
+        color:black;
+        text-decoration: none;
+        
+     }
+
+    
+    
+
+
+
+</style>
+<!-- ************************************************************************************************************** -->
+
+<body>
+    <div class="range"></div>
+    <div class="sliderValue">
+        <span>55</span>
+        
+    </div>
+    <div class="slider">
+        
+        <input type="range" min="0" max="120" value="5" class="range-slider" id="slider">
+        <label for="" class="label-left">0</label>
+        
+        <label for="" class="label-right">120</label>
+
+        <input   class="btn3" type="button" id="value1" value="55">
+        
+
+        
+    </div>
+
+
+
+
+
+
+
+
+
+        <input class="btn1" type="button" id="save" value="save">
+        <input   class="btn2" type="button" id="cancel" value="cancel">
+            
+
+
+
+
+   <!-- ****************************************************************************************************************** -->
+
+   
+<div class="slider">
+    
+    <input type="range" min="0" max="120" value="5" class="range-slider" id="slider">
+    <label for="" class="label-left">0</label>
+    <label for="" class="label-right">120</label>
+    <input type="button" id="value1" value="120">
+        
+</div>
+
+
+
+
+
+
+
+
+
+<input class="btn1" type="button" id="save" value="save"></button>
+<input   class="btn2" type="button" id="cancel" value="cancel"></button>
+
+
+
+    
+
+
+
+
+    <!-- <script>
+        var slider=document.querySelector('#slider')
+        var label=document.querySelector('#label')
+        label.innerHTML=slider.value;
+
+
+
+
+        slider.oninput=function()
+        {
+           label.innerHTML=slider.value;
+           slider.style.background='red';
+
+        }
+        
+        
+    </script> -->
+
+   
+</body>
 </html>
